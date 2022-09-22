@@ -16,8 +16,8 @@ app.use(cors());
 app.use(express.json());
 
 //ROUTES
-// const poemRouter = require("./routes/menu");
-// app.use("/poem", poemRouter);
+const poemRouter = require("./routes/post");
+app.use("/post", poemRouter);
 
 //LISTEN
 app.listen(PORT, () => {
